@@ -67,7 +67,7 @@ while run:
     keys = pygame.key.get_pressed()
     
     if len(osmans) < 2:
-        osmans.append(Osman(int(700),random.randint(4,6)*100,(200,0,0),40,40))
+        osmans.append(Osman(int(700),random.randint(400,600),(200,0,0),40,40))
     if keys[pygame.K_SPACE]:
         if len(bullets) < 7:
             bullets.append(Projectile(int(man.x+man.width/2),int(man.y+man.height/2),(0,200,0),20,5))
